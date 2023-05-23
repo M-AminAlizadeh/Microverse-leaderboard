@@ -9,7 +9,72 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
     <title>Microverse Leaderboard Project</title>
   </head>
-  <body></body>
+  <body class="container w-50 d-flex flex-column justify-content-center">
+    <!-- Header -->
+    <header>
+      <h1 class="mb-5">Leaderboard</h1>
+    </header>
+    <section class="d-flex gap-4 justify-content-between">
+      <div class="w-50">
+        <div class="d-flex mb-3 justify-content-between">
+          <h3>Recent scores</h3>
+          <button type="button" class="btn btn-success">Refresh</button>
+        </div>
+
+        <!-- Recent score section -->
+        <table class="table border border-2 table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name1</td>
+              <td>Score1</td>
+            </tr>
+            <tr>
+              <td>Name2</td>
+              <td>Score2</td>
+            </tr>
+            <tr>
+              <td>Name3</td>
+              <td>Score3</td>
+            </tr>
+            <tr>
+              <td>Name4</td>
+              <td>Score4</td>
+            </tr>
+            <tr>
+              <td>Name5</td>
+              <td>Score5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Add score section -->
+      <form class="w-50">
+        <h3>Add your score</h3>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your name" />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="score"
+            placeholder="Your score" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </body>
 </html>
