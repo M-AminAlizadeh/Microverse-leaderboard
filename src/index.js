@@ -29,6 +29,9 @@ if (gameId) {
     };
 
     xhr.send(body);
+    // Clear form inputs
+    nameInput.value = "";
+    scoreInput.value = "";
   });
 
   // Get data from api
