@@ -17,16 +17,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>Microverse Leaderboard Project</title>
   </head>
-  <body class="container w-50 d-flex flex-column justify-content-center">
+  <body class="container w-75 d-flex flex-column justify-content-center">
     <!-- Header -->
     <header>
       <h1 class="mb-5">Leaderboard</h1>
     </header>
-    <section class="d-flex gap-4 justify-content-between">
+    <section
+      class="d-flex gap-4 justify-content-between flex-wrap flex-md-nowrap">
       <div class="w-50">
         <div class="d-flex mb-3 justify-content-between">
           <h3>Recent scores</h3>
-          <button type="button" class="btn btn-success refresh-btn">Refresh</button>
+          <button type="button" class="btn btn-success refresh-btn">
+            Refresh
+          </button>
         </div>
 
         <!-- Recent score section -->
@@ -57,7 +60,11 @@
             id="score"
             placeholder="Your score" />
         </div>
-        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary submit-btn">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   </body>
