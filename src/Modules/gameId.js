@@ -1,10 +1,6 @@
-/* eslint-disable */
-let gameId = localStorage.getItem('gameId') || '';
-/* eslint-enable */
-
+let gameId = localStorage.getItem('gameId') || '';// eslint-disable-line
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
-// This happens when there is no game id in the localstorage
 const makeGameId = async () => {
   const res = await fetch(API, {
     method: 'POST',
