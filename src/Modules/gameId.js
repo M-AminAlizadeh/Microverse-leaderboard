@@ -1,7 +1,6 @@
-const gameId = localStorage.getItem('gameId') || '';
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
-const makeGameId = async () => {
+const makeGameId = async (gameId) => {
   const res = await fetch(API, {
     method: 'POST',
     headers: {
@@ -18,4 +17,4 @@ const makeGameId = async () => {
   localStorage.setItem('gameId', gameId);
 };
 
-export { gameId, API, makeGameId };
+export { API, makeGameId };
