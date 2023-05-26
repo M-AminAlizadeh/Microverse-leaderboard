@@ -11,7 +11,6 @@ if (!gameId) {
   makeGameId();
 } else {
   recieveData(gameId);
-  // console.log(recieveData(gameId));
   refreshBtn.addEventListener('click', () => {
     recieveData(gameId);
   });
