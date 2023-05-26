@@ -9,6 +9,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
+    port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -30,8 +31,5 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  },
-  devServer: {
-    port: 9000,
   },
 };

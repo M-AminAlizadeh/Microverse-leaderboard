@@ -1,4 +1,5 @@
 import { API } from './gameId.js';
+
 const tableBody = document.querySelector('.table-body');
 
 const recieveData = async (gameId) => {
@@ -18,4 +19,4 @@ const recieveData = async (gameId) => {
   return scores;
 };
 
-export { recieveData };
+export default recieveData;

@@ -5,4 +5,4 @@ const resetForm = () => {
   scoreInput.value = '';
 };
 
-export { resetForm };
+export default resetForm;

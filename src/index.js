@@ -1,8 +1,8 @@
 import './style.css';
 import { gameId, makeGameId } from './Modules/gameId.js';
-import { recieveData } from './Modules/recieve.js';
+import recieveData from './Modules/recieve.js';
 import { sendData } from './Modules/send.js';
-import { resetForm } from './Modules/reset';
+import resetForm from './Modules/reset.js';
 
 const submitBtn = document.querySelector('.submit-btn');
 const refreshBtn = document.querySelector('.refresh-btn');
